@@ -28,7 +28,7 @@
             margin: 0.5rem 0;
             font-family: 'Poiret One', cursive; /* Applied Poiret One font */
             /* Added gradient to header */
-            background: linear-gradient(to top, #ffffff 50%, #999999 25%);
+            background: linear-gradient(to top, #ffffff, #eeeeee, #aaaaaa, #999999);
             -webkit-background-clip: text;
             color: transparent;
         }
@@ -36,24 +36,7 @@
             font-size: 1rem;
             max-width: 600px;
             margin: 0.5rem 0;
-        }
-        .cta-button {
-            padding: 0.7rem 1.5rem;
-            margin-top: 1.5rem;
-            border: none;
-            background-color: #000000;
-            color: #ffffff;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #333333;
-        }
-        .mystery-message {
-            font-size: 1rem;
-            color: #666666;
-            margin-top: 1rem;
+            background: linear-gradient(to top, #999999, #aaaaaa, #eeeeee, #ffffff);
         }
     </style>
 </head>
@@ -61,18 +44,6 @@
 
     <h1>individ.ai</h1>
     <p>The power of autonomy, designed for your everyday life.</p>
-    <p>Imagine an assistant that doesn’t just respond, but understands and anticipates.</p>
-
-    <button class="cta-button" onclick="showMysteryMessage()">Join the Waitlist</button>
-    
-    <p class="mystery-message" id="mysteryMessage"></p>
-
-    <script>
-        function showMysteryMessage() {
-            const message = document.getElementById("mysteryMessage");
-            message.textContent = "Are you ready to experience true autonomy?";
-        }
-    </script>
 
 </body>
 </html>
