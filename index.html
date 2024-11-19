@@ -39,6 +39,56 @@
             color: #dddddd;
             text-transform: uppercase;
         }
+
+        /* Base styles for the badge */
+        .powered-by-badge {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+          border-radius: 20px;
+          padding: 5px 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          border: 1px solid #d0d0d0;
+          color: #555;
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+        
+        /* Text and ZubiAI logo styles */
+        .powered-by-badge span {
+          margin-right: 5px;
+          font-weight: 300;
+        }
+        
+        .powered-by-badge strong {
+          font-weight: 600;
+          color: #333;
+        }
+        
+        .powered-by-badge strong .ai {
+          color: #0073e6; /* Highlighted 'AI' part */
+          font-weight: bold;
+        }
+        
+        /* Hover effect */
+        .powered-by-badge:hover {
+          background: linear-gradient(135deg, #e6f7ff, #cceeff);
+          color: #0073e6;
+          border-color: #0073e6;
+          box-shadow: 0 4px 10px rgba(0, 115, 230, 0.2);
+        }
+        
+        .powered-by-badge:hover strong {
+          color: #005bb5;
+        }
+        
+        .powered-by-badge:hover strong .ai {
+          color: #003d80;
+        }
+        
         /* Responsive font size for h1 */
         @media (max-width: 768px) {
             h1 {
@@ -65,5 +115,9 @@
     <h1>individ.ai</h1>
     <p>Something autonomous. Something personal.</p>
 
+    <div class="powered-by-badge">
+      <span>Powered by</span>
+      <strong>Zubi<span class="ai">AI</span></strong>
+    </div>
 </body>
 </html>
